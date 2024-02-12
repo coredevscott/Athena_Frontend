@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-[#011710] py-1">
+    <Disclosure as="nav" className="bg-[#011710] py-2">
       {({ open }) => (
         <>
           <div className="w-full px-2 mx-auto sm:px-6 lg:px-8">
@@ -36,8 +36,8 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex items-center justify-between flex-1 w-full">
-                <div className="flex items-center flex-shrink-0 ml-6 lg:ml-0">
-                  <img src="../img/logo.png" className='w-40 h-20 cursor-pointer'></img>
+                <div className="flex items-center flex-shrink-0 ml-12 lg:ml-0">
+                  <img src="../img/logo.svg" className='w-32 h-20 cursor-pointer'></img>
                 </div>
                 <div className="items-center hidden sm:ml-6 lg:flex">
                   <div className="flex space-x-4">

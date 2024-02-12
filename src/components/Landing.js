@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 import Navbar from './Dashboard/Navbar';
 import Main from './Dashboard/Main';
+import Supply from './Dashboard/Supply';
+import Markets from './Dashboard/Markets';
 import axios from 'axios';
 
 function Landing () {
@@ -15,6 +17,8 @@ function Landing () {
         <div className='relative w-full h-full body'>
           <Navbar />
           <Main />
+          <Supply />
+          <Markets />
         </div>
       </div>
     );
