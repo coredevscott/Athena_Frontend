@@ -9,6 +9,9 @@ import Navbar from './Dashboard/Navbar';
 import Main from './Dashboard/Main';
 import Supply from './Dashboard/Supply';
 import Markets from './Dashboard/Markets';
+import Howwork from './Dashboard/Howwork';
+import About from './Dashboard/About';
+import Tokenomics from './Dashboard/Tokenomics';
 import axios from 'axios';
 
 function Landing () {
@@ -19,6 +22,9 @@ function Landing () {
           <Main />
           <Supply />
           <Markets />
+          <Howwork />
+          <About />
+          <Tokenomics />
         </div>
       </div>
     );

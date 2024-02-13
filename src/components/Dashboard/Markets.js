@@ -18,7 +18,7 @@ export default function Markets() {
             <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-xl">
                 <h2 className="text-base font-semibold leading-7 text-[#5CDD98] underline">Markets</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Athena Markets</p>
+                <p className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">Athena Markets</p>
                 <p className="mt-6 text-lg leading-8 text-[#DADBDF]">
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con ullamco lab
                 </p>
