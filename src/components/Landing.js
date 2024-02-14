@@ -5,14 +5,14 @@ import '../css/animations.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import Navbar from './Dashboard/Navbar';
-import Main from './Dashboard/Main';
-import Supply from './Dashboard/Supply';
-import Markets from './Dashboard/Markets';
-import Howwork from './Dashboard/Howwork';
-import About from './Dashboard/About';
-import Tokenomics from './Dashboard/Tokenomics';
-import Footer from './Dashboard/Footer';
+import Navbar from './Landing/Navbar';
+import Main from './Landing/Main';
+import Supply from './Landing/Supply';
+import Markets from './Landing/Markets';
+import Howwork from './Landing/Howwork';
+import About from './Landing/About';
+import Tokenomics from './Landing/Tokenomics';
+import Footer from './Landing/Footer';
 import axios from 'axios';
 
 function Landing () {
