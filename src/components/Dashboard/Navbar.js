@@ -26,7 +26,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button> */}
               </div>
-              <div className="flex flex-col items-center justify-between flex-1 w-full md:flex-row">
+              <div className="flex flex-col items-center justify-between flex-1 w-full sm:flex-row">
                 <div className="items-center flex-shrink-0 hidden sm:flex">
                     <div className='relative'>
                         <input type="text" placeholder='Search Token' className='bg-[#213630] rounded-md p-3 text-sm w-[300px]'></input>
