@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from './Landing/Navbar';
 import Main from './Landing/Main';
 import Supply from './Landing/Supply';
+import Outlook from './Landing/Outlook';
 import Markets from './Landing/Markets';
 import Howwork from './Landing/Howwork';
 import About from './Landing/About';
@@ -22,6 +23,7 @@ function Landing () {
           <Navbar />
           <Main />
           <Supply />
+          <Outlook />
           <Markets />
           <Howwork />
           <About />

@@ -1,3 +1,5 @@
+import '../../css/athena.css';
+
 export default function Supply() {
     return (
       <div className="py-8 bg-[#002A1E] border-t-8 border-b-8 border-[#021A13] sm:py-12 relative">
@@ -14,7 +16,7 @@ export default function Supply() {
               </div>
               <div className="flex flex-col max-w-xs mx-auto gap-y-4">
                 <div className="text-base leading-7 text-white">Borrow against your collateral from across multiple networks and assets.</div>
-                <div className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+                <div className="order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl MichromaFont">
                   Supply
                 </div>
               </div>
@@ -22,7 +24,7 @@ export default function Supply() {
 
             <div className="flex flex-col max-w-xs mx-auto gap-y-4">
                 <div className="text-base leading-7 text-white">of liquidity is locked in Aave across 8 networks and over 15 markets..</div>
-                <div className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+                <div className="order-first text-3xl font-semibold tracking-tight text-white sm:text-4xl MichromaFont">
                   $10,901,188,124.74
                 </div>
             </div>

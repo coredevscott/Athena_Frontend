@@ -1,6 +1,5 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import { FiArrowLeftCircle, FiArrowRightCircle} from "react-icons/fi";
 import { BsArrowUpRightCircle } from "react-icons/bs";
+import '../../css/athena.css';
 
 const data = [
     {imgUrl: "./img/market-eth.svg", network: "Ethereum"},
@@ -19,7 +18,7 @@ export default function Howwork() {
             <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-2xl">
                 <h2 className="text-base font-semibold leading-7 text-[#5CDD98] underline">How to start?</h2>
-                <p className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">How it works?</p>
+                <p className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl MichromaFont">How it works?</p>
                 <p className="mt-6 text-lg leading-8 text-[#DADBDF]">
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad 
                 </p>
