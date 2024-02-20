@@ -2,6 +2,10 @@
     font-family: 'Montserrat' !important;
 }
 
+.MichromaFont {
+    font-family: 'Michroma' !important;
+}
+
 /* _lg */
 @media only screen and (max-width: 1440px) {
 

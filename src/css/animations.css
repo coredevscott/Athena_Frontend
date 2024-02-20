@@ -75,3 +75,19 @@
         transform: translate(0px, 0px);
     }
 }
+
+.movingImg {
+    animation: moveUpDown 3s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0% {
+    margin-top: -25px;
+  }
+  50% {
+    margin-top: 0px; /* Adjust the distance of movement as needed */
+  }
+  100% {
+    margin-top: -25px;
+  }
+}

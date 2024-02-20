@@ -37,7 +37,7 @@ export default function Howwork() {
                         <div className='text-[#0E221C] text-4xl sm:text-5xl font-semibold transition-all duration-300 group-hover:text-[#5CDD98]'>02</div>
                         <div className='flex flex-col max-w-md gap-3'>
                             <p className='font-semibold text-white'>Submit Aave Request for comment(ARC)</p>
-                            <p className='text-[#E3EAE6]'>Discuss with community members and receive feedback</p>
+                            <p className='group-hover:text-[#E3EAE6] text-[#717B76]'>Discuss with community members and receive feedback</p>
                         </div>
                         <BsArrowUpRightCircle className='w-10 h-10 text-[#3A4844] transition-all duration-300 group-hover:text-[#5CDD98]'/>
                     </div>
@@ -46,7 +46,7 @@ export default function Howwork() {
                         <div className='text-[#0E221C] text-4xl sm:text-5xl font-semibold transition-all duration-300 group-hover:text-[#5CDD98]'>03</div>
                         <div className='flex flex-col max-w-md gap-3'>
                             <p className='font-semibold text-white'>Submit Aave Request for comment(ARC)</p>
-                            <p className='text-[#E3EAE6]'>Discuss with community members and receive feedback</p>
+                            <p className='group-hover:text-[#E3EAE6] text-[#717B76]'>Discuss with community members and receive feedback</p>
                         </div>
                         <BsArrowUpRightCircle className='w-10 h-10 text-[#3A4844] transition-all duration-300 group-hover:text-[#5CDD98]'/>
                     </div>

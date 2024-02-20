@@ -71,15 +71,15 @@ export default function Main() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 bg-[#223831] rounded-md p-4">
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <p className="text-[#30B778] text-2xl font-bold">$90.90</p>
+                        <p className="text-[#30B778] text-3xl sm:text-4xl font-bold">$90.90</p>
                         <p className="text-sm text-white">Your Balance</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <p className="text-[#30B778] text-2xl font-bold">$0.00</p>
+                        <p className="text-[#30B778] text-3xl sm:text-4xl font-bold">$0.00</p>
                         <p className="text-sm text-white">Net worth</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <p className="text-[#30B778] text-2xl font-bold">$0.00</p>
+                        <p className="text-[#30B778] text-3xl sm:text-4xl font-bold">$0.00</p>
                         <p className="text-sm text-white">Net APY</p>
                     </div>
                 </div>

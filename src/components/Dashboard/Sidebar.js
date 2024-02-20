@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 const sidebarList = [
   {imgSrc: <FaCubesStacked className="w-5 h-5"/>, title: "Dashboard", url: "/dashboard"},
   {imgSrc: <MdAutoGraph className="w-5 h-5"/>, title: "Markets", url: "/market"},
-  {imgSrc: <IoLayersOutline className="w-5 h-5"/>, title: "Stake", url: "/dashboard"},
+  {imgSrc: <IoLayersOutline className="w-5 h-5"/>, title: "Stake", url: "/stake"},
   {imgSrc: <TbWorldDollar className="w-5 h-5"/>, title: "Governance", url: "/dashboard"},
   {imgSrc: <IoWalletOutline className="w-5 h-5"/>, title: "MyWallet", url: "/dashboard"},
   {imgSrc: <RiExchangeLine className="w-5 h-5"/>, title: "Transactions", url: "/dashboard"},
@@ -32,7 +32,9 @@ export default function Sidebar() {
 
   return (
       <div className="md:flex hidden group relative h-screen text-[#A69F9F] flex-col gap-10 px-5 bg-[#21372F] border border-[#21372F] w-[70px] hover:w-[200px] transition-all duration-500">
-      <img src="./img/logo.svg" className="w-40 h-20 mt-10"></img>
+      <Link to="/">
+        <img src="./img/rounded-logo.svg" className="w-40 h-20 mt-10 ml-[-4px]"></img>
+      </Link>
       {sidebarList.map((item, index) => (
           <Link to={item.url}><div className={"flex flex-row gap-4 items-center justify-start cursor-pointer " + (activeItem != index ? "text-[#9FA7B1] hover:text-white" : "text-white")}>
               <div>{item.imgSrc}</div>

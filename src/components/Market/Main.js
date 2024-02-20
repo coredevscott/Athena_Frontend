@@ -52,15 +52,15 @@ export default function Main() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 bg-[#223831] rounded-md p-4">
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <p className="text-[#30B778] text-2xl font-bold">$375.88M</p>
+                        <p className="text-[#30B778] text-3xl sm:text-4xl font-bold">$375.88M</p>
                         <p className="text-sm text-white">Total market</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <p className="text-[#30B778] text-2xl font-bold">$257.22M</p>
+                        <p className="text-[#30B778] text-3xl sm:text-4xl font-bold">$257.22M</p>
                         <p className="text-sm text-white">Total available</p>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <p className="text-[#30B778] text-2xl font-bold">$118.67M</p>
+                        <p className="text-[#30B778] text-3xl sm:text-4xl font-bold">$118.67M</p>
                         <p className="text-sm text-white">Total borrows</p>
                     </div>
                 </div>
