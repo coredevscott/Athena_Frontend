@@ -9,7 +9,7 @@ export default function Main() {
         <img src="./img/main-back-gradient.png" className="absolute bottom-0 right-0 z-10"></img>
         <div className="py-16 mx-auto sm:px-6 sm:py-20 lg:px-8">
           <div className="relative grid grid-cols-1 px-6 pt-16 isolate sm:rounded-3xl sm:px-16 md:pt-24 lg:grid-cols-2 lg:gap-x-20 lg:px-24 lg:pt-0">
-            <div className="max-w-2xl mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <div className="max-w-2xl mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left fadeInLeft">
               <h2 className="text-2xl font-medium leading-loose tracking-wide text-white sm:text-5xl MichromaFont" style={{lineHeight: "70px"}}>
                 Invest Your Money 
                 <br />
@@ -30,9 +30,8 @@ export default function Main() {
                 </a>
               </div>
             </div>
-            <div className="relative mt-16 h-80 lg:mt-8">
+            <div className="relative mt-16 h-80 lg:mt-8 fadeInRight">
               <img src="./img/main-foreground.svg" className="movingImg"></img>
-              {/* <img src="./img/main-back-gradient.png" className="absolute top-0 left-0 z-10"></img> */}
             </div>
           </div>
         </div>

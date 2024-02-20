@@ -4,6 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom';
 
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import '../../css/animations.css';
 
 const navigation = [
   { name: 'Map Protocol', href: '#', current: true },
@@ -22,7 +23,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-[#011710] py-2">
       {({ open }) => (
         <>
-          <div className="w-full px-2 mx-auto sm:px-6 lg:px-8">
+          <div className="w-full px-2 mx-auto sm:px-6 lg:px-8 fadeInDown">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
                 {/* Mobile menu button*/}

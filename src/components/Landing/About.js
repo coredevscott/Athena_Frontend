@@ -14,7 +14,7 @@ export default function About() {
                         <p className="mt-6 text-lg leading-8 text-[#DADBDF]">
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut <br /><br />enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con ullamco lab
                         </p>
-                        <button className='bg-[#30B778] text-white rounded-md py-3 px-10 mt-6'>Learn More</button>
+                        <button className='bg-[#30B778] text-white rounded-md py-3 px-10 mt-6 hover:text-[#30B778] hover:bg-white transition-all duration-500'>Learn More</button>
                     </div>
                 </div>
                 <div className='flex items-center justify-center'>

@@ -11,12 +11,12 @@ export default function Outlook() {
 return (
     <div className="py-24 bg-[#011A13] sm:py-32 text-white">
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
-            <div className="text-3xl sm:text-4xl ">
+            <div className="text-3xl font-medium sm:text-4xl">
                 Reasonable Outlook
             </div>
             <dl className="grid grid-cols-1 mt-20 text-left gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-4">
                 {stats.map((stat) => (
-                    <div className="flex flex-col items-start justify-start max-w-xs mx-auto gap-y-4 bg-[#032A1F] rounded-md p-3 border-b-4 border-[#30B778]">
+                    <div className="hover:translate-y-[-10px] transition-transform duration-700 ease-in-out cursor-pointer flex flex-col items-start justify-start max-w-xs mx-auto gap-y-4 bg-[#032A1F] rounded-md p-3 border-b-4 border-[#30B778]">
                         <img src={stat.imgUrl} className='w-20 h-20'></img>
                         <div className="text-lg font-semibold tracking-tight sm:text-xl">
                             {stat.name}
