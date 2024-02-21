@@ -3,24 +3,24 @@ import '../../css/athena.css';
 
 const features = [
   {
-    name: 'Reserve factor:',
+    name: 'Reserve Allocation:',
     description:
-      'percentage of protocol interest paid by borrowers',
+      'Serves as a safeguard for future operations, liquidity provision, and potential market stabilization.',
     icon: IoCheckmarkOutline,
   },
   {
-    name: 'Instant liquidity fees:',
-    description: 'percentage of fees from instant liquidity transactions (V3 only).',
+    name: 'Airdrop:',
+    description: 'Involve the distribution of tokens to a specific group of users as a promotional or reward mechanism',
     icon: IoCheckmarkOutline,
   },
   {
-    name: 'Liquidation fees:',
-    description: 'percentage of collateral liquidation bonus (V3 only, not yet active)',
+    name: 'Swap Liquidity:',
+    description: 'Seamlessly exchange tokens, enhancing market accessibility, and facilitating efficient trading within the platform ecosystem',
     icon: IoCheckmarkOutline,
   },
   {
-    name: 'Portal fees:',
-    description: 'paid by bridging protocols to re-back assets (V3 only, not yet active)',
+    name: 'Foundation & Investors:',
+    description: 'Investors or Foundation or core team responsible for developing and maintaining',
     icon: IoCheckmarkOutline,
   },
 ]
@@ -38,7 +38,7 @@ export default function Tokenomics() {
               <h2 className="text-base font-semibold leading-7 text-[#5CDD98] underline">Tokenomics</h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl MichromaFont">Athena Tokens</p>
               <p className="mt-6 text-lg leading-8 text-[#DADBDF]">
-                The Map treasury is composed of the ecosystem reserve (MAP tokens) and treasury collectors which earn fees from:
+                The Athena treasury is composed of the ecosystem reserve (ATHN tokens) and treasury collectors which earn fees from:
               </p>
               <dl className="max-w-xl mt-10 space-y-4 text-base leading-7 text-[#DADBDF] lg:max-w-none">
                 {features.map((feature) => (

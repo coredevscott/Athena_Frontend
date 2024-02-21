@@ -16,7 +16,7 @@ export default function Main() {
                 <p className="flex flex-row">With <p className="text-[#30B778]">Higher Return</p></p>
               </h2>
               <p className="max-w-xl mt-6 text-lg leading-8 text-gray-300">
-                Anyone can invest money to different currency to increase their earnings by the help of MAP through online.
+                Anyone can invest money to different currency to increase their earnings by the help of Athena through online.
               </p>
               <div className="flex items-center justify-center mt-10 gap-x-6 lg:justify-start">
                 <a

@@ -24,7 +24,7 @@ export default function Supply() {
             </div>
 
             <div className="flex flex-col max-w-xs mx-auto gap-y-4">
-                <div className="text-base leading-7 text-white">of liquidity is locked in Aave across 8 networks and over 15 markets..</div>
+                <div className="text-base leading-7 text-white">of liquidity is locked in Athena across all networks and over hundreds of markets.</div>
                 <div className="order-first text-2xl font-semibold tracking-tight text-white sm:text-4xl MichromaFont">
                   $10,901,188,124.74
                 </div>

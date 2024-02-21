@@ -9,10 +9,10 @@ export default function About() {
                 <img src='./img/about-back.svg' className='absolute top-0 left-0 w-full'></img>
                 <div className="relative flex items-center justify-center">
                     <div className="lg:max-w-xl">
-                        <h2 className="text-base font-semibold leading-7 text-[#5CDD98] underline">How to start?</h2>
+                        <h2 className="text-base font-semibold leading-7 text-[#5CDD98] underline">About Athena</h2>
                         <p className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl MichromaFont">Athena DeFi Lending</p>
                         <p className="mt-6 text-lg leading-8 text-[#DADBDF]">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut <br /><br />enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con ullamco lab
+                            Unlocking Web3's potential: Your all-in-one super dApp for seamless cross-chain lending, swapping, and payments—bridging worlds, one swap at a time.
                         </p>
                         <button className='bg-[#30B778] text-white rounded-md py-3 px-10 mt-6 hover:text-[#30B778] hover:bg-white transition-all duration-500'>Learn More</button>
                     </div>
