@@ -14,6 +14,7 @@ import Howwork from './Landing/Howwork';
 import About from './Landing/About';
 import Tokenomics from './Landing/Tokenomics';
 import Functions from './Landing/Functions';
+import Roadmap from './Landing/Roadmap';
 import Footer from './Landing/Footer';
 import axios from 'axios';
 
@@ -27,6 +28,7 @@ function Landing () {
           <Outlook />
           <Markets />
           <Howwork />
+          <Roadmap />
           <About />
           <Tokenomics />
           <Functions />
