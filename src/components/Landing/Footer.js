@@ -62,7 +62,7 @@ export default function Footer() {
                     <div className='flex flex-row justify-start gap-5 mt-10'>
                         <a href="https://t.me/AtheanLabs" target='_blank'><FaTelegram className='w-7 h-7 text-white cursor-pointer hover:text-[#5CDD98]'/></a>
                         <a href="https://discord.gg/Ykp9saUf" target="_blank"><FaDiscord className='w-7 h-7 text-white cursor-pointer hover:text-[#5CDD98]'/></a>
-                        <a href="https://x.com/AthnLabs/status/1760061981174993382?s=20" target="_blank"><FaTwitter className='w-7 h-7 text-white cursor-pointer hover:text-[#5CDD98]'/></a>
+                        <a href="https://twitter.com/AthnLabs" target="_blank"><FaTwitter className='w-7 h-7 text-white cursor-pointer hover:text-[#5CDD98]'/></a>
                         <FaLinkedin className='w-7 h-7 text-white cursor-pointer hover:text-[#5CDD98]'/>
                     </div>
                 </div>
