@@ -17,13 +17,13 @@ export default function Main() {
                         </div>
                     </div>
                     <p className="max-w-3xl text-left">ATNHENA fully decentralized, community governed protocol by the ATNHENA token-holders. AAVE token-holders collectively discuss, propose, and vote on upgrades to the protocol. AAVE token-holders (Ethereum network only) can either vote themselves on new proposals or delagate to an address of choice. To learn more check out the Governance. </p>
-                    <a className="text-left underline text-[#30B778]">Documentation</a>
+                    <a className="text-left underline text-[#30B778] cursor-pointer">Documentation</a>
                     <div className='flex flex-row gap-2'>
-                        <div className='py-2 px-5 rounded-md flex-row gap-2 bg-[#4D5753] text-[#BABABA] flex items-center text-sm'>
+                        <div className='py-2 px-5 rounded-md flex-row gap-2 bg-[#4D5753] text-[#BABABA] flex items-center text-sm cursor-pointer'>
                             FAQ
                             <FiExternalLink className='w-4 h-4'/>
                         </div>
-                        <div className='py-2 px-5 rounded-md flex-row gap-2 bg-[#4D5753] text-[#BABABA] flex items-center text-sm'>
+                        <div className='py-2 px-5 rounded-md flex-row gap-2 bg-[#4D5753] text-[#BABABA] flex items-center text-sm cursor-pointer'>
                             Governance
                             <FiExternalLink className='w-4 h-4'/>
                         </div>
@@ -76,7 +76,7 @@ export default function Main() {
                         </div>
                         <div className="text-[#807B7B] text-left mt-3 flex flex-col gap-1">
                             Use your ANTHENA balance to delegate your voting and proposition powers. You will not be sending any tokens, only the rights to vote and propose changes to the protocol. You can re-delegate or revoke power to self at any time.
-                            <p className="text-[#30B778] underline">Learn More</p>
+                            <p className="text-[#30B778] underline cursor-pointer">Learn More</p>
                         </div>
                         <div className="text-[#BABABA] bg-[#4D5753] rounded-md border border-[#7E7D7D] py-3 mt-4 cursor-pointer">Setup Delegation</div>
                     </div>
