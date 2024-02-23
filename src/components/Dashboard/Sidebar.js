@@ -14,7 +14,7 @@ const sidebarList = [
   {imgSrc: <FaCubesStacked className="w-5 h-5"/>, title: "Dashboard", url: "/dashboard"},
   {imgSrc: <MdAutoGraph className="w-5 h-5"/>, title: "Markets", url: "/market"},
   {imgSrc: <IoLayersOutline className="w-5 h-5"/>, title: "Stake", url: "/stake"},
-  {imgSrc: <TbWorldDollar className="w-5 h-5"/>, title: "Governance", url: "/dashboard"},
+  {imgSrc: <TbWorldDollar className="w-5 h-5"/>, title: "Governance", url: "/governance"},
   {imgSrc: <IoWalletOutline className="w-5 h-5"/>, title: "MyWallet", url: "/dashboard"},
   {imgSrc: <RiExchangeLine className="w-5 h-5"/>, title: "Transactions", url: "/dashboard"},
 ];

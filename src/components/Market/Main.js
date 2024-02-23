@@ -1,6 +1,5 @@
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useEffect, useState } from "react";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 
 export default function Main() {
@@ -42,7 +41,7 @@ export default function Main() {
             <div className="grid w-full grid-cols-1 gap-10 text-white cursor-pointer sm:grid-cols-2">
                 <div className="flex flex-col gap-5">
                     <div className="flex flex-row justify-between">
-                        <div className="flex flex-row items-center gap-2">
+                        <div className="flex flex-row items-center gap-2 text-xl font-medium sm:text-2xl">
                             <img src="./img/market-polygon.png" className="w-8 h-8"></img>
                             Polygon
                             <MdOutlineKeyboardArrowDown className="w-5 h-5 text-[#30B778]"/>
