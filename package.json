@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@amcharts/amcharts5": "^5.8.4",
     "@babel/core": "^7.22.20",
     "@babel/preset-env": "^7.22.20",
     "@headlessui/react": "^1.7.14",
