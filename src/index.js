@@ -14,26 +14,62 @@ import {
   mainnet,
   base,
   bsc,
+  zkSync,
+  sepolia,
   arbitrum,
   polygon,
-  zkSync,
+  pulsechain
 } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 
+import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import {
+  injectedWallet,
+  rainbowWallet,
+  metaMaskWallet,
+  coinbaseWallet,
+  walletConnectWallet,
+  okxWallet,
+  trustWallet,
+  imTokenWallet,
+  tokenPocketWallet,
+  bitgetWallet,
+} from '@rainbow-me/rainbowkit/wallets';
+
+const projectId = 'fe62b424c4ab666f47d64744e0b3dca0';
+
 const { chains, publicClient } = configureChains(
-  [mainnet, bsc, arbitrum, polygon, base, zkSync],
+  [mainnet, bsc, arbitrum, polygon, pulsechain],
   [
     alchemyProvider({ apiKey: 'ekZhZsGjfWuK39pYW_YXSEcRKDN8amSN' }),
     publicProvider()
   ]
 );
 
-const { connectors } = getDefaultWallets({
-  appName: 'walletConnect',
-  projectId: 'fe62b424c4ab666f47d64744e0b3dca0',
-  chains
-});
+const connectors = connectorsForWallets([
+  {
+    groupName: 'Suggested',
+    wallets: [
+      metaMaskWallet({ projectId, chains }),
+      bitgetWallet({ projectId, chains }),
+      okxWallet({projectId, chains}),
+      trustWallet({projectId, chains}),
+      walletConnectWallet({ projectId, chains }),
+      injectedWallet({ chains }),
+      rainbowWallet({ projectId, chains }),
+      coinbaseWallet({ chains, appName: 'walletConnect' }),
+      imTokenWallet({projectId, chains}),
+      tokenPocketWallet({projectId, chains})
+    ],
+  },
+]);
+
+// const { connectors } = getDefaultWallets({
+//   appName: 'walletConnect',
+//   projectId: 'fe62b424c4ab666f47d64744e0b3dca0',
+//   chains
+// });
 
 const wagmiConfig = createConfig({
   autoConnect: true,

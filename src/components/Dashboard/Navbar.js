@@ -31,7 +31,7 @@ export default function Navbar() {
                           <div className='absolute flex flex-row items-center gap-2 text-xl transform -translate-y-1/3 top-1/2 right-3'>
                             <img src="../img/market-eth.svg" className='w-6 h-6'></img>ETH
                           </div>
-                        </div>
+                        </div> 
                         <div className='rounded-full z-10 bg-[#009045] p-2 w-20 h-20 ml-48 mt-[-10px] relative flex items-center justify-center'><HiOutlineSwitchVertical className='w-12 h-12'/></div>
                         <p className='mt-[-40px] z-0 text-sm text-white'>Recipient gets</p>
                         <div className='relative w-full'>
@@ -72,7 +72,78 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className='flex flex-row gap-3'>
-                    <button className='bg-[#30B778] rounded-md py-3 px-5 text-white text-sm hover:text-[#30B778] hover:bg-white transition-all duration-500'>Connect Wallet</button>
+                    <ConnectButton.Custom>
+                      {({
+                          account,
+                          chain,
+                          openAccountModal,
+                          openChainModal,
+                          openConnectModal,
+                          authenticationStatus,
+                          mounted,
+                      }) => {
+                          const ready = mounted && authenticationStatus !== 'loading';
+                          const connected =
+                              ready &&
+                              account &&
+                              chain &&
+                              (!authenticationStatus ||
+                                  authenticationStatus === 'authenticated');
+
+                          return (
+                              <div
+                                  {...(!ready && {
+                                      'aria-hidden': true,
+                                      'style': {
+                                          opacity: 0,
+                                          pointerEvents: 'none',
+                                          userSelect: 'none',
+                                      },
+                                  })}
+                              >
+                                  {(() => {
+                                      if (!connected) {
+                                          return (
+                                              <button className="bg-[#30B778] rounded-md py-3 px-5 text-white text-sm hover:text-[#30B778] hover:bg-white transition-all duration-500" onClick={openConnectModal} type="button">
+                                                  Connect Wallet
+                                              </button>
+                                          );
+                                      }
+                                      return (
+                                          <div style={{ display: 'flex', gap: 12 }} className='flex-row text-white'>
+                                              <button
+                                                  onClick={openChainModal}
+                                                  className='flex items-center bg-[#30B778] rounded-md px-5 text-white text-sm hover:text-[#30B778] hover:bg-white transition-all duration-500'
+                                                  type="button"
+                                              >
+                                                  {chain.hasIcon && (
+                                                      <div
+                                                          className='w-6 h-6 m-2 ml-0 rounded-full overflw-hidden'
+                                                          style={{
+                                                              background: chain.iconBackground,
+                                                          }}
+                                                      >
+                                                          {chain.iconUrl && (
+                                                              <img
+                                                                  alt={chain.name ?? 'Chain icon'}
+                                                                  src={chain.iconUrl}
+                                                                  style={{ width: 24, height: 24 }}
+                                                              />
+                                                          )}
+                                                      </div>
+                                                  )}
+                                                  {chain.name}
+                                              </button>
+                                              <button className="bg-[#30B778] rounded-md py-3 px-5 text-white text-sm hover:text-[#30B778] hover:bg-white transition-all duration-500" onClick={openAccountModal} type="button">
+                                                  Disconnect Wallet
+                                              </button>
+                                          </div>
+                                      );
+                                  })()}
+                              </div>
+                          );
+                      }}
+                    </ConnectButton.Custom>
                     <button className='bg-[#30B778] rounded-md p-3 text-white text-sm hover:text-[#30B778] hover:bg-white transition-all duration-500' onClick={() => setShowModal(1)}><HiOutlineSwitchHorizontal className='w-5 h-5'/></button>
                 </div>
               </div>
